@@ -1,0 +1,58 @@
+mobile_api_homepage:
+    path:     /
+    defaults: { _controller: MobileApiBundle:Default:index }
+mobile_api_event_list:
+    path:     /evenement/affiche
+    defaults: { _controller: MobileApiBundle:Event:list }
+
+mobile_api_event_add:
+    path:     /evenement/ajouter
+    defaults: { _controller: MobileApiBundle:Event:add}
+mobile_api_event_image:
+    path:     /evenement/image
+    defaults: { _controller: MobileApiBundle:Event:image}
+mobile_api_event_update:
+    path:     /evenement/update
+    defaults: { _controller: MobileApiBundle:Event:update}
+mobile_api_event_remove:
+    path:     /evenement/supprimer
+    defaults: { _controller: MobileApiBundle:Event:supprimer}
+mobile_api_event_by_categorie:
+    path:     /evenement/by-categorie
+    defaults: { _controller: MobileApiBundle:Event:ShowEventByCat }
+mobile_api_event_one:
+    path:     /evenement/one-event
+    defaults: { _controller: MobileApiBundle:Event:ShowOneEvent }
+mobile_api_pub_list:
+    path:     /publication/affiche
+    defaults: { _controller: MobileApiBundle:Publication:all }
+mobile_api_pub_add:
+    path:     /publication/add
+    defaults: { _controller: MobileApiBundle:Publication:addPublication }
+mobile_api_event_json:
+    path:     /full-calendar/load-json
+    defaults: { _controller: MobileApiBundle:Event:getEventsJson }
+mobile_api_pub_update:
+    path:     /publication/{id}/update
+    defaults: { _controller: MobileApiBundle:Publication:updatePublication }
+mobile_api_pub_delete:
+    path:     /publication/supprimer
+    defaults: { _controller: MobileApiBundle:Publication:supprimer }
+mobile_api_pub_Back_list:
+    path:     /publicationBack/affiche
+    defaults: { _controller: MobileApiBundle:PublicationBack:affiche}
+mobile_api_pub_Back_Show_One:
+    path:     /publicationBack/{id}/one-pub
+    defaults: { _controller: MobileApiBundle:PublicationBack:showonePublication}
+mobile_api_pub_Back_valide:
+    path:     /publicationBack/{id}/valider
+    defaults: { _controller: MobileApiBundle:PublicationBack:validate}
+mobile_api_pub_Back_blocked:
+    path:     /publicationBack/{id}/block
+    defaults: { _controller: MobileApiBundle:PublicationBack:block}
+mobile_api_pub_Back_all:
+    path:     /publicationBack/all-back
+    defaults: { _controller: MobileApiBundle:PublicationBack:all}
+mobile_api_pub_participer:
+    path:     /publication/participer
+    defaults: { _controller: MobileApiBundle:Publication:participer}
